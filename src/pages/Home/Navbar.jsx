@@ -34,9 +34,12 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
+      
       <div data-aos="fade-left" className="logo">
-        <a href="#"><img style={{ width: '10rem' }} src="./img/my-logo.png" alt="Logo" /></a>
+        <a href="#"><img style={{ width: '30%' }} src="./img/my-logo.png" alt="Logo" /></a>
       </div>
+
+
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
@@ -45,6 +48,8 @@ function Navbar() {
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
       </a>
+
+
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <ul>
           <li>
@@ -75,7 +80,7 @@ function Navbar() {
               Portfolio
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               onClick={closeMenu}
               activeClass="navbar--active-content"
@@ -88,7 +93,7 @@ function Navbar() {
             >
               About Me
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               onClick={closeMenu}
@@ -105,6 +110,8 @@ function Navbar() {
           </li>
         </ul>
       </div>
+
+
       <Link
         onClick={closeMenu}
         activeClass="navbar--active-content"

@@ -6,11 +6,11 @@ export default function MyPortfolio() {
       <div className="portfolio--container-box">
         <div className="portfolio--container">
           <br />
-          <p data-aos="fade-down" className="sub--title">Recent Projects</p>
+          <p className="sub--title">Recent Projects</p>
           <h2 className="section--heading">My Portfolio</h2>
         </div>
         <div>
-          <button data-aos="fade-right" className="btn btn-github">
+          <button  className="btn btn-github">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -32,9 +32,9 @@ export default function MyPortfolio() {
       </div>
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (
-          <div data-aos="fade-left" key={index} className="portfolio--section--card">
+          <div key={index} className="portfolio--section--card">
             <div className="portfolio--section--img">
-              <img style={{ height: '50vh', borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} src={item.src} alt="Placeholder" />
+              {/* <img style={{ height: '50vh', borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} src={item.src} alt="Placeholder" /> */}
             </div>
             <div className="portfolio--section--card--content">
               <div>

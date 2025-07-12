@@ -6,22 +6,22 @@ export default function ContactMe() {
   if (state.succeeded) {
     return (
       <center style={{ padding: '10px' }}>
-        <p data-aos="fade-up" >Thanks for Contacting Me!</p>
+        <p  >Thanks for Contacting Me!</p>
       </center>
     )
   }
   return (
     <section id="Contact" className="contact--section">
       <div>
-        <p data-aos="fade-right" className="sub--title">Get In Touch</p>
+        <p  className="sub--title">Get In Touch</p>
         <h2>Contact Me</h2>
-        <p data-aos="fade-down" className="text-lg">
+        <p  className="text-lg">
           Let's Discuss and Solve Problems!
         </p>
       </div>
       <form onSubmit={handleSubmit} className="contact--form--container">
         <div className="container">
-          <label data-aos="fade-right" data-aos-delay="100" htmlFor="first-name" className="contact--label">
+          <label  data-aos-delay="100" htmlFor="first-name" className="contact--label">
             <span className="text-md">First Name</span>
             <input
               type="text"
@@ -31,7 +31,7 @@ export default function ContactMe() {
               required
             />
           </label>
-          <label data-aos="fade-right" htmlFor="last-name" className="contact--label">
+          <label  htmlFor="last-name" className="contact--label">
             <span className="text-md">Last Name</span>
             <input
               type="text"
@@ -41,7 +41,7 @@ export default function ContactMe() {
               required
             />
           </label>
-          <label data-aos="fade-left" htmlFor="email" className="contact--label">
+          <label  htmlFor="email" className="contact--label">
             <span className="text-md">Email</span>
             <input
               type="email"
@@ -51,7 +51,7 @@ export default function ContactMe() {
               required
             />
           </label>
-          <label data-aos="fade-down" htmlFor="phone-number" className="contact--label">
+          <label  htmlFor="phone-number" className="contact--label">
             <span className="text-md">phone-number</span>
             <input
               type="number"
@@ -63,7 +63,7 @@ export default function ContactMe() {
           </label>
 
         </div>
-        <label data-aos="fade-up" htmlFor="message" className="contact--label">
+        <label  htmlFor="message" className="contact--label">
           <span className="text-md">Message</span>
           <textarea
             className="contact--input text-md"

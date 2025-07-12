@@ -1,29 +1,41 @@
 {
   "skills": [
-    {
-      "id": "1",
-      "src": "./img/frontend.png",
-      "title": "Front-End",
-      "description": "I create responsive web applications using HTML, CSS, and JavaScript. Proficient in React.js  and versatile with various web frameworks, I adapt to project specifications, learning what's needed to deliver user-friendly interfaces."
-    },
-    {
-      "id": "2",
-      "src": "./img/backend.png",
-      "title": "Back-End",
-      "description": "I craft secure and innovative backend solutions using Node.js and Python. My expertise ensures smooth and robust functionality, empowering your applications to operate seamlessly."
-    },
-    {
-      "id": "3",
-      "src": "./img/database.png",
-      "title": "Databases",
-      "description": "Proficient in various databases, I favor MongoDB for its flexibility. I adeptly tailor data solutions to project specifications ,optimizing data storage and retrieval efficiently."
-    },
-    {
-      "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "Code Instructor",
-      "description": "I train developers to code, emphasizing best practices and job readiness. My goal is to nurture skilled professionals ready to contribute effectively in the industry."
-    }
+    [
+      {
+        "id": "1",
+        "src": "./img/frontend.png",
+        "title": "Front-End"
+      },
+      {
+        "id": "2",
+        "src": "./img/backend.png",
+        "title": "Back-End"
+      },
+      {
+        "id": "3",
+        "src": "./img/database.png",
+        "title": "Databases"
+      },
+      {
+        "id": "4",
+        "src": "./img/feather-pen-1.png",
+        "title": "Code Instructor"
+      }
+    ],
+    [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "PHP",
+      "C++",
+      "React",
+      "Node.js",
+      "MySQL",
+      "Git",
+      "Tailwind",
+      "Django"
+    ]
   ],
   "portfolio": [
     {
@@ -32,7 +44,7 @@
       "title": "Sushiman",
       "description": "A dynamic Sushi ordering landing page crafted using HTML, CSS, and JavaScript. This feature-rich web application offers innovative solutions to common ordering and menu browsing challenges.",
       "link": "Visit Application ",
-      "href":"https://sushiman-hg7x.onrender.com"
+      "href": "https://sushiman-hg7x.onrender.com"
     },
     {
       "id": "2",
@@ -40,15 +52,15 @@
       "title": "Buymerica ",
       "description": "It's an e-commerce web application created with React.js. It offers powerful features like search and filter, add to cart, account management, and a flexible light/dark mode. Start your online shopping journey with Buymerica today!",
       "link": "Visit Application ",
-      "href":"https://buymerica.onrender.com"
+      "href": "https://buymerica.onrender.com"
     },
     {
       "id": "3",
       "src": "./img/flasknote.png",
       "title": "Note-taker ",
-      "description":"It's a Note Taker web application built with Flask, featuring secure user login, the capability to create, save, and delete notes. Our priority is ensuring your data remains super safe and secure.",
+      "description": "It's a Note Taker web application built with Flask, featuring secure user login, the capability to create, save, and delete notes. Our priority is ensuring your data remains super safe and secure.",
       "link": "View Repo ",
-      "href":"https://github.com/Biggerwad/Flask-Notes-app"
+      "href": "https://github.com/Biggerwad/Flask-Notes-app"
     }
   ]
 }

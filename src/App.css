@@ -1,12 +1,28 @@
 /* Global CSS */
 @import url(./Effects.css);
 
-body {
+html, body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: "Roboto", sans-serif;
-  -moz-osx-font-smoothing: "Roboto", sans-serif;
-  font-style: normal;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  /* font-size: clamp(16px, 2vw, 20px); */
+  font-family: sans-serif;
+  background: #e8e5e5b5;
+}
+
+.m-container {
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh; /* full viewport height */
+  display: flex; /* or grid */
+  flex-direction: column;
+  align-items: center; /* optional */
+  justify-content: center; /* optional */
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 h1,
@@ -22,7 +38,7 @@ p {
 :root {
   --primary: #5e3bee;
   --heading-color: #282938;
-  --bg-shade: #f5fcff;
+  --bg-shade: #63b5d8;
   --github: #e62872;
   --darkblue: #1c1e53;
   --black: #000000;
@@ -75,8 +91,8 @@ p {
 
 @media (max-width:1200px) {
   button.hero-btn {
-    margin: 0 calc(40%);
-    padding: 1 3rem;
+    /* margin: 0 calc(50%); */
+    /* padding: 1 3rem; */
   }
 
   .hero--section--img {
@@ -187,7 +203,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 85.333px;
+  padding: 5px 10px;
   background: var(--white);
   box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -228,12 +244,12 @@ h2 {
 .hero--section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 85.333px 133.333px;
+  padding: 2rem;
   align-items: center;
   justify-content: space-between;
   gap: 15%;
   margin-top: 2rem;
-  background-color: var(--bg-shade);
+  /* background-color: var(--bg-shade); */
 }
 
 .hero--section--content-box {
@@ -244,6 +260,7 @@ h2 {
 }
 
 .hero--section--content {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -268,7 +285,7 @@ h2 {
 
 .hero--section-description {
   color: var(--darkblue);
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 32px;
 }
@@ -278,7 +295,7 @@ h2 {
 }
 
 .hero--section--img>img {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   width: 100%;
   height: 100%;
 }
@@ -288,7 +305,7 @@ h2 {
 /* Skills Section Style */
 .skills--section {
   display: flex;
-  padding: 1rem 85.33px;
+  padding: 5%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -366,12 +383,44 @@ h2 {
 
 /* Skills Style Ends */
 
+.skills-section {
+  padding: 2rem 1.5rem;
+  background-color: #2d3748; /* same as bg-gray-800 */
+  color: white;
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill-badge {
+  padding: 0.5rem 1rem;
+  background-color: #4a5568; /* same as bg-gray-700 */
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* About Us */
 .about--section {
+  max-width: 100%;
   display: grid;
-  padding: 133.3px 85.3px;
+  padding: 3rem;
   align-items: center;
-  gap: 114.6px;
+  /* gap: 114.6px; */
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -385,7 +434,7 @@ h2 {
 /* My Portfolio Starts */
 .portfolio--section {
   display: flex;
-  padding: 1rem 85px;
+  padding: 1rem 0;
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
@@ -415,10 +464,11 @@ h2 {
 
 .portfolio--section--img {
   border-radius: 8px;
-  width: 100%;
+  width: 100% ;
 }
 
 .portfolio--section--img>img {
+  height: 2rem;
   width: 100%;
 }
 
@@ -466,19 +516,21 @@ h2 {
 
 .contact--section {
   display: flex;
-  padding: 150px 85px;
+  padding: 1rem;
+  margin: 4rem 0;  
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1.333px solid var(--primary);
   text-align: center;
-  gap: 64px;
+  /* gap: 64px; */
 }
 
 .contact--form--container {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(5, auto);
-  width: 40%;
+  /* width: 40%; */
   row-gap: 32px;
 }
 
@@ -629,6 +681,13 @@ input[type="checkbox"] {
     line-height: 70px;
   }
 
+.hero--section--img {
+  margin: 0 auto;
+}
+
+.hero--section--content--box {
+  margin: 0 auto;
+}
   .skills--section--container {
     gap: 16px;
   }
@@ -662,11 +721,11 @@ input[type="checkbox"] {
     flex-direction: column-reverse;
     padding-bottom: 70px;
   }
-
   .hero--section--title,
   .hero--section-description,
   .footer--content {
     text-align: center;
+    margin: 0 auto;
   }
 
   .skills--section--container,
@@ -784,7 +843,7 @@ input[type="checkbox"] {
   .navbar--items ul {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     padding: 3rem 0 0.6rem;
     z-index: -100;
   }

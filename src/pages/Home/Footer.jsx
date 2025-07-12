@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer--container" id="footer">
       <div className="footer--link--container">
-        <div data-aos="fade-right" className="logo">
+        <div  className="logo">
           <a href="#"> <img style={{ width: '10rem' }} src="./img/my-logo.png" alt="Logo" /></a>
         </div>
         <div className="footer--items">
@@ -147,7 +147,7 @@ function Footer() {
         </div>
       </div>
       <hr className="divider" />
-      <div data-aos="fade-down" className="footer--content--container">
+      <div className="footer--content--container">
         <p style={{ margin: '0 auto' }} className="footer--content">
           <div>&copy; {new Date().getFullYear()} Wesey</div>
         </p>
